@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="332dp"
+        android:layout_height="228dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/gonder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gorsel" />
+
+    <Button
+        android:id="@+id/gonder"
+        android:layout_width="205dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="gonder"
+        android:text="EASY LEVEL"
+        android:textColorHighlight="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gonderTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/kal"
+        android:layout_width="205dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="37dp"
+        android:onClick="kal"
+        android:text="EXIT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderTwo" />
+
+    <Button
+        android:id="@+id/gonderTwo"
+        android:layout_width="205dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="gonderTwo"
+        android:text="HARD LEVEL"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/kal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonder" />
+</androidx.constraintlayout.widget.ConstraintLayout>
